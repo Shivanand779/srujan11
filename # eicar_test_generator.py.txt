@@ -1,0 +1,14 @@
+# eicar_test_generator.py
+
+EICAR_STRING = (
+    "X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
+)
+
+def main():
+    filename = "eicar_test_file.com"
+    with open(filename, "w", encoding="ascii") as f:
+        f.write(EICAR_STRING)
+    print(f"Created {filename}. You can now upload this to your AV or VirusTotal for testing.")
+
+if _name_ == "_main_":
+    main()
